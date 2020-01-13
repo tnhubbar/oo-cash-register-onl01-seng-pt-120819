@@ -22,9 +22,8 @@ end
   
   def apply_discount 
     if discount != 0
-  discount_total = self.total - discount/100 
-  puts 'After the discount, the total comes to #{discount_total}."
-
+   self.total = (total * ((100.0 - discount.to_f)/100)).to_i
+      "After the discount, the total comes to $#{self.total}."
   else 
   puts "There is no discount to apply." 
   
