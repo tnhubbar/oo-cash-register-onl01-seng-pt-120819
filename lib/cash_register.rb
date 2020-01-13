@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :discount, :total, :items 
+  attr_accessor :discount, :total, :items , :last_transaction  
   
   
   
@@ -26,10 +26,12 @@ end
       "After the discount, the total comes to $#{self.total}."
   else 
   "There is no discount to apply."
-  
   end 
-end 
+  end 
 
+  def void_last_transaction
+    self.total - last_transaction 
+  end 
 
 end 
 
