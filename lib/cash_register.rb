@@ -21,7 +21,7 @@ end
   end 
   
   def apply_discount 
-    self.total * discount/100 
+
   end 
   
 end 
