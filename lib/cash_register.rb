@@ -21,8 +21,13 @@ end
   end 
   
   def apply_discount 
+    if discount 
   discount_total = self.total - discount/100 
-  puts ""After the discount, the total comes to #{discount_total}.""
+  puts 'After the discount, the total comes to #{discount_total}."
+
+else 
+puts "There is no discount to apply." 
+  
   end 
   
 end 
