@@ -21,7 +21,8 @@ end
   end 
   
   def apply_discount 
-
+  discount_total = self.total - discount/100 
+  puts ""After the discount, the total comes to #{discount_total}.""
   end 
   
 end 
